@@ -1,0 +1,123 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh
+}
+
+.container{
+    background:#0f172a;
+    padding:24px;
+    border-radius:16px;
+    width:780px;
+    box-shadow:0 0 30px rgba(0,0,0,.6)
+}
+
+h1{
+    text-align:center;
+    margin-top:0
+}
+
+.instruction{
+    text-align:center;
+    font-size:14px;
+    color:#cbd5f5;
+    margin-bottom:10px
+}
+
+.target{
+    text-align:center;
+    font-size:48px;
+    color:#38bdf8;
+    margin:12px 0
+}
+
+.keyboard{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:10px
+}
+
+.row{
+    display:flex;
+    gap:6px;
+    justify-content:center
+}
+
+.key{
+    width:48px;
+    height:48px;
+    background:#1e293b;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase
+}
+
+.key.space{
+    width:260px
+}
+
+.key.active{
+    background:#38bdf8;
+    color:#000;
+    box-shadow:0 0 10px #38bdf8
+}
+
+.key.correct{
+    background:#22c55e;
+    color:#000
+}
+
+.key.wrong{
+    background:#ef4444;
+    color:#000
+}
+
+.progress{
+    text-align:center;
+    margin-top:12px
+}
+
+button{
+    margin-top:14px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    background:#38bdf8;
+    cursor:pointer
+}
+
+#result{
+    text-align:center;
+    margin-top:16px
+}
+
+.home-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: rgba(15, 23, 42, 0.9);
+    color: #38bdf8;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    z-index: 999;
+}
+
+.home-btn:hover {
+    background: #38bdf8;
+    color: #020617;
+}

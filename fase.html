@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de Digitação – Fase</title>
+    <link rel="stylesheet" href="fase.css">
+</head>
+<body>
+    <button class="home-btn" onclick="voltarHome()">🏠 Home</button>
+
+    <div class="container">
+
+        <h1 id="faseTitulo"></h1>
+
+        <div class="instruction">Digite a tecla destacada sem olhar para o teclado</div>
+        <div class="target" id="targetKey">-</div>
+        <div class="keyboard" id="keyboard"></div>
+
+        <div class="progress">
+            Progresso: <span id="progress">0</span>/<span id="total">0</span><br>
+            Velocidade: <strong><span id="tps">0</span> TPS</strong> • <strong><span id="tpm">0</span> TPM</strong>
+        </div>
+
+        <button onclick="startPhase()">▶️ Iniciar Fase</button>
+
+        <div id="result" style="display:none">
+            <h3>🏁 Fase concluída</h3>
+            <p><strong><span id="finalTPS">0</span> TPS</strong> • <strong><span id="finalTPM">0</span> TPM</strong></p>
+            <p id="recommendation"></p>
+            <button id="nextBtn" style="display:none" onclick="irParaProximaFase()">➡️ Próxima Fase</button>
+        </div>
+
+    </div>
+
+    <script src="fases.js"></script>    
+    <script src="fase.js"></script>
+</body>
+</html>
